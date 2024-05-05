@@ -15,18 +15,13 @@ Kelas: C
 ![alt text](img/chat.png)
 
 
+### 3.2. Add some creativities to the webclient
+![alt text](img/creative-yew.png)
 
+Untuk kreativitas, saya mengubah tema webchat tersebut menjadi berwarna pink. Selain itu, saya juga mengubah avatar pada profile picture menjadi gambar seorang wanita. Modifikasi tersebut saya lakukan pada file chat.rs di bagian html nya.
 
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
 
 # YewChat 💬
 

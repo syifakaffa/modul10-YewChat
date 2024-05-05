@@ -93,8 +93,8 @@ impl Component for Chat {
                             .map(|u| UserProfile {
                                 name: u.into(),
                                 avatar: format!(
-                                    "https://avatars.dicebear.com/api/adventurer-neutral/{}.svg",
-                                    u
+                                    "https://img.freepik.com/premium-vector/default-female-user-profile-icon-vector-illustration_276184-169.jpg",
+                                    
                                 )
                                 .into(),
                             })
@@ -139,8 +139,8 @@ impl Component for Chat {
         let submit = ctx.link().callback(|_| Msg::SubmitMessage);
 
         html! {
-            <div class="flex w-screen">
-                <div class="flex-none w-56 h-screen bg-gray-100">
+            <div class="flex w-screen bg-gradient-to-r from-pink-300 to-pink 500">
+                <div class="flex-none w-56 h-screen bg-pink-100">
                     <div class="text-xl p-3">{"Users"}</div>
                     {
                         self.users.clone().iter().map(|u| {
@@ -162,7 +162,7 @@ impl Component for Chat {
                         }).collect::<Html>()
                     }
                 </div>
-                <div class="grow h-screen flex flex-col">
+                <div class="grow h-screen flex flex-col bg-gradient-to-r from-pink-300 to-pink-500">
                     <div class="w-full h-14 border-b-2 border-gray-300"><div class="text-xl p-3">{"💬 Chat!"}</div></div>
                     <div class="w-full grow overflow-auto border-b-2 border-gray-300">
                         {
